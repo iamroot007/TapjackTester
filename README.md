@@ -2,7 +2,9 @@
 
 TapjackTester is a small Android test application designed to determine if an Android application is vulnerable to tapjacking. The app allows you to toggle a **transparent fullscreen red overlay** while keeping normal app interaction intact. If your app accepts input while the overlay is on, you know it is vulnerable to tapjacking.
 
-Specifically, this is made for the "full occlusion" scenario described by the Android docs [here](https://developer.android.com/privacy-and-security/risks/tapjacking#risk_full_occlusion).OWASP MASTG defines static and dynamic tests [here](https://mas.owasp.org/MASTG/tests/android/MASVS-PLATFORM/MASTG-TEST-0035/), but I have found that it is difficult to ensure static tests are comprehensive when considering frameworks like React Native that provide abstractions over the Android `View` object. I also found that the dynamic tests listed in MASTG and elsewhere on GitHub, etc. were outdated, or tested the wrong thing (attempting to collect user input, etc). So, I created this test app.
+Specifically, this is made for the "full occlusion" scenario described by the Android docs [here](https://developer.android.com/privacy-and-security/risks/tapjacking#risk_full_occlusion). OWASP MASTG defines static and dynamic tests [here](https://mas.owasp.org/MASTG/tests/android/MASVS-PLATFORM/MASTG-TEST-0035/), but I have found that it is difficult to ensure static tests are comprehensive when considering frameworks like React Native that provide abstractions over the Android `View` object. I also found that the dynamic tests listed in MASTG and elsewhere on GitHub, etc. were outdated, or tested the wrong thing (attempting to collect user input, etc). So, I created this test app. 
+
+[More infomation can be found on my blog.](https://voraci0.us/2025/12/21/android-tapjacking.html)
 
 ---
 
